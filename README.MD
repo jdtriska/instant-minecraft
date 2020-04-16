@@ -61,7 +61,7 @@ If you want your Minecraft server to be available at a particular domain name (l
 
 ## Configuring Minecraft for the first time
 
-This project uses the [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server) docker image, with [Paper](https://papermc.io/) and [Forge](https://files.minecraftforge.net/) enabled. When the server is first created, it will populate the `~/minecraft/data` folder with defaults for everything necessary to run your server. Please see the Paper documentation for the basics of configuring a paper server. If you would like to use Spigot, Bukkit, or the official server, just modify the `docker run` command in `~/minecraft/scripts/start-minecraft.sh` according to the [itzg/minecraft-server documentation](https://hub.docker.com/r/itzg/minecraft-server).
+This project uses the [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server) docker image, with [Paper](https://papermc.io/). When the server is first created, it will populate the `~/minecraft/data` folder with defaults for everything necessary to run your server. Please see the Paper documentation for the basics of configuring a paper server. If you would like to use Spigot, Bukkit, or the official server, just modify the `docker run` command in `~/minecraft/scripts/start-minecraft.sh` according to the [itzg/minecraft-server documentation](https://hub.docker.com/r/itzg/minecraft-server).
 
 The primary files in `~/minecraft/data` for configuration are `server.properties`, `paper.yml`, `spigot.yml`, and `bukkit.yml`. White and black lists can be found in `whitelist.json`, `banned-players.json`, and `banned-ips.json`.
 
