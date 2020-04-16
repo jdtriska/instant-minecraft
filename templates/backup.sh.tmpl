@@ -1,0 +1,7 @@
+#!/bin/bash
+# exit when any command fails
+set -e
+
+BACKUP_DATE=$(date)
+echo $${BACKUP_DATE} > ~/minecraft/data/backup.log
+aws s3 sync ~/minecraft/data "s3://${BUCKET}/$${BACKUP_DATE}" --delete
