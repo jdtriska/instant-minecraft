@@ -4,6 +4,7 @@ docker ps -aq --filter "name=minecraft" | grep -q . && docker stop minecraft && 
 docker run -d \
  -it \
  -e EULA=TRUE \
+ -e FORCE_REDOWNLOAD=true \
  -e TYPE=FORGE \
  -e TYPE=PAPER -e VERSION=1.15.2 \
  -p 25565:25565 \
