@@ -65,6 +65,8 @@ This project uses the [itzg/minecraft-server](https://hub.docker.com/r/itzg/mine
 
 The primary files in `~/minecraft/data` for configuration are `server.properties`, `paper.yml`, `spigot.yml`, and `bukkit.yml`. White and black lists can be found in `whitelist.json`, `banned-players.json`, and `banned-ips.json`.
 
+To run commands against your Minecraft server, SSH into the server and run `docker attach minecraft`. This attaches your terminal to the Minecraft server and let you interact with it. To detach and return to the shell, press `ctrl+p+q`.
+
 **WARNING:** By default, the server is completely open and public. You will want to set up a whitelist or other authentication solution after deploying the server.
 
 ## Managing your server
